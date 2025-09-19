@@ -12,7 +12,7 @@ This toolkit provides three complementary approaches for migrating Confluence co
 
 ## Scripts
 
-### 1. `confluence_spaces_exporter.py`
+### 1. `confluence_spaces_exporter_in_md.py`
 **Markdown Export with Full Hierarchy**
 
 Exports Confluence spaces to markdown files with nested folder structure, preserving the original page hierarchy and downloading all attachments.
@@ -27,7 +27,7 @@ Exports Confluence spaces to markdown files with nested folder structure, preser
 
 **Usage:**
 ```bash
-python confluence_spaces_exporter.py
+python confluence_spaces_exporter_in_md.py
 ```
 
 **Output Structure:**
@@ -155,16 +155,6 @@ python confluence_spaces_exporter_in_csv.py
 2. Follow the generated `IMPORT_INSTRUCTIONS.md`
 3. Upload CSV files to Fibery's CSV import feature
 
-### For Other Systems
-
-1. **Use Markdown Export**:
-```bash
-python confluence_spaces_exporter.py
-```
-2. **If needed, restructure**:
-```bash
-python restructure_md_space_import_for_fibery_import.py ./confluence_export/SPACE ./fibery_ready/SPACE
-```
 
 ## Authentication
 
