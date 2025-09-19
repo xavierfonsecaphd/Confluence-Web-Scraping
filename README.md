@@ -6,49 +6,13 @@ A comprehensive set of Python scripts to extract content from Confluence spaces 
 
 This toolkit provides three complementary approaches for migrating Confluence content:
 
-1. **Markdown Export** - Traditional file-based export with hierarchy preservation
-2. **CSV Export** - Structured data export optimized for database imports
+1. **CSV Export of Confluence SPACE(S)** - Structured data export optimized for database imports
+2. **Markdown Export of Confluence SPACE(S)** - Traditional file-based export with hierarchy preservation
 3. **Markdown Restructuring** - Post-processing tool for flattening exports
 
 ## Scripts
 
-### 1. `confluence_spaces_exporter_in_md.py`
-**Markdown Export with Full Hierarchy**
-
-Exports Confluence spaces to markdown files with nested folder structure, preserving the original page hierarchy and downloading all attachments.
-
-**Features:**
-- Interactive space selection
-- Preserves original page hierarchy as nested folders
-- Downloads all attachments (images, PDFs, documents)
-- Converts Confluence macros to markdown equivalents
-- Maintains metadata in YAML frontmatter
-- Creates navigational README files
-
-**Usage:**
-```bash
-python confluence_spaces_exporter_in_md.py
-```
-
-**Output Structure:**
-```
-confluence_export/
-├── SPACE_KEY/
-│   ├── Page_Title.md
-│   ├── Parent_Page/
-│   │   └── Child_Page.md
-│   ├── attachments/
-│   │   ├── image1.jpg
-│   │   └── document.pdf
-│   └── README.md (space index)
-```
-
-**Best For:**
-- Preserving exact Confluence structure
-- Manual content review and editing
-- Systems that support nested folder imports
-
-### 2. `confluence_spaces_exporter_in_csv.py`
+### 1. `confluence_spaces_exporter_in_csv.py`
 **Direct CSV Export for Database Import**
 
 Exports Confluence spaces directly to CSV format with rich metadata, optimized for importing into database-driven systems like Fibery.
@@ -63,7 +27,7 @@ Exports Confluence spaces directly to CSV format with rich metadata, optimized f
 
 **Usage:**
 ```bash
-python confluence_spaces_exporter_in_csv.py
+py confluence_spaces_exporter_in_csv.py
 ```
 
 **Output Structure:**
@@ -93,6 +57,47 @@ confluence_csv_export/
 - Maintaining relational data integrity
 - Bulk processing workflows
 
+
+### 2. `confluence_spaces_exporter_in_md.py`
+
+This is for the case where you want to approach the through Markdown and not CSV.
+
+**Markdown Export with Full Hierarchy**
+
+Exports Confluence spaces to markdown files with nested folder structure, preserving the original page hierarchy and downloading all attachments.
+
+**Features:**
+- Interactive space selection
+- Preserves original page hierarchy as nested folders
+- Downloads all attachments (images, PDFs, documents)
+- Converts Confluence macros to markdown equivalents
+- Maintains metadata in YAML frontmatter
+- Creates navigational README files
+
+**Usage:**
+```bash
+py confluence_spaces_exporter_in_md.py
+```
+
+**Output Structure:**
+```
+confluence_export/
+├── SPACE_KEY/
+│   ├── Page_Title.md
+│   ├── Parent_Page/
+│   │   └── Child_Page.md
+│   ├── attachments/
+│   │   ├── image1.jpg
+│   │   └── document.pdf
+│   └── README.md (space index)
+```
+
+**Best For:**
+- Preserving exact Confluence structure
+- Manual content review and editing
+- Systems that support nested folder imports
+
+
 ### 3. `restructure_md_space_import_for_fibery_import.py`
 **Markdown Restructuring Tool**
 
@@ -107,12 +112,12 @@ Post-processes markdown exports to flatten the structure and fix attachment path
 
 **Usage:**
 ```bash
-python restructure_md_space_import_for_fibery_import.py <input_dir> <output_dir>
+py restructure_md_space_import_for_fibery_import.py <input_dir> <output_dir>
 ```
 
 **Example:**
 ```bash
-python restructure_md_space_import_for_fibery_import.py ./confluence_export/3OV ./fibery_ready/3OV
+py restructure_md_space_import_for_fibery_import.py ./confluence_export/3OV ./fibery_ready/3OV
 ```
 
 **Output Structure:**
@@ -136,7 +141,7 @@ fibery_ready/
 
 **Required Python Packages:**
 ```bash
-pip install requests beautifulsoup4 markdownify pyyaml
+py -m pip install requests beautifulsoup4 markdownify pyyaml
 ```
 
 **For Confluence Cloud:**
@@ -146,11 +151,17 @@ pip install requests beautifulsoup4 markdownify pyyaml
 
 ## Quick Start
 
+
+1. **Install requirements**:
+```bash
+py -m pip install -r requirements.txt
+```
+
 ### For Fibery Import (Recommended)
 
 1. **Use CSV Export** (most reliable):
 ```bash
-python confluence_spaces_exporter_in_csv.py
+py confluence_spaces_exporter_in_csv.py
 ```
 2. Follow the generated `IMPORT_INSTRUCTIONS.md`
 3. Upload CSV files to Fibery's CSV import feature
