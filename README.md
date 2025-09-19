@@ -140,8 +140,10 @@ fibery_ready/
 ## Prerequisites
 
 **Required Python Packages:**
+
+**Install requirements for all scripts**:
 ```bash
-py -m pip install requests beautifulsoup4 markdownify pyyaml
+py -m pip install -r requirements.txt
 ```
 
 **For Confluence Cloud:**
@@ -152,24 +154,20 @@ py -m pip install requests beautifulsoup4 markdownify pyyaml
 ## Quick Start
 
 
-1. **Install requirements**:
-```bash
-py -m pip install -r requirements.txt
-```
-
 ### For Fibery Import (Recommended)
 
 1. **Use CSV Export** (most reliable):
 ```bash
 py confluence_spaces_exporter_in_csv.py
 ```
-2. Follow the generated `IMPORT_INSTRUCTIONS.md`
-3. Upload CSV files to Fibery's CSV import feature
+2. **Alternativelly**:
+    2.1. Follow the generated `IMPORT_INSTRUCTIONS.md`
+    2.2. Upload CSV files to Fibery's CSV import feature
 
 
 ## Authentication
 
-All scripts use Confluence Cloud API tokens:
+**confluence_spaces_exporter_in_csv** and **confluence_spaces_exporter_in_md** scripts use Confluence Cloud API tokens:
 
 1. Go to: https://id.atlassian.com/manage-profile/security/api-tokens
 2. Create a new token
@@ -261,4 +259,4 @@ To extend these tools:
 
 ## License
 
-These tools are provided as-is for educational and migration purposes. Test thoroughly before production use.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

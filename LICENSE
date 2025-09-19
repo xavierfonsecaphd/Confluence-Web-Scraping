@@ -1,21 +1,122 @@
-MIT License
+# MIT License
 
-Copyright (c) 2025 Xavier Fonseca
+**Copyright (c) 2025 Xavier Fonseca**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Preamble
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This MIT License is a permissive free software license that allows maximum freedom for users while requiring attribution to the original author. The software is provided with the intention of being useful to the community while preserving the author's recognition.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## License Terms
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+### Attribution Requirement
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+### Permitted Uses
+
+This license explicitly permits:
+- **Personal use**: Individuals may use this software for personal projects
+- **Commercial use**: Companies and individuals may use this software in commercial products
+- **Modification**: The software may be modified, adapted, or enhanced
+- **Distribution**: Original or modified versions may be distributed
+- **Private use**: The software may be used privately without disclosure
+- **Sublicensing**: Recipients may grant sublicenses under the same terms
+- **Sale**: The software or derivatives may be sold
+
+### Requirements
+
+When distributing this software or derivative works:
+1. **Copyright notice preservation**: The original copyright notice must be included
+2. **License inclusion**: This license text must be included
+3. **Attribution**: Credit must be given to the original author(s)
+
+### No Additional Restrictions
+
+You may not impose any additional restrictions on the exercise of the rights granted under this license. This includes but is not limited to:
+- Patent licensing restrictions
+- Trademark restrictions beyond those specified
+- Additional attribution requirements
+- Distribution limitations
+
+## Disclaimer of Warranty
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.**
+
+The author makes no representations about the suitability of this software for any purpose. The software is provided without any guarantee of:
+- Functionality or performance
+- Freedom from defects or errors
+- Compatibility with any particular system
+- Continued availability or support
+
+## Limitation of Liability
+
+**IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
+
+This limitation applies to all damages including but not limited to:
+- Direct, indirect, special, incidental, or consequential damages
+- Loss of profits, data, or business opportunities
+- System failures or downtime
+- Third-party claims
+
+## Patent Grant
+
+If you have or acquire patent rights that would be infringed by the software, you grant to all recipients a non-exclusive, worldwide, royalty-free license to make, use, sell, and distribute the software under those patent claims.
+
+## Interpretation
+
+- **"Software"** refers to the source code, object code, documentation, and any associated materials
+- **"Copy"** includes any substantial portion of the software
+- **"Distribute"** means to make available to third parties
+- **"Modify"** means to alter, adapt, or create derivative works
+
+## Compatibility
+
+This license is compatible with:
+- Other MIT licensed software
+- BSD licensed software
+- Apache 2.0 licensed software (when properly combined)
+- Most permissive open source licenses
+- Proprietary software (the software may be incorporated into proprietary products)
+
+## Termination
+
+This license is granted in perpetuity and cannot be revoked. However, if you fail to comply with the terms, your rights under this license terminate automatically.
+
+## Governing Law
+
+This license shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to conflict of law principles.
+
+---
+
+## How to Apply This License
+
+1. **Include this LICENSE file** in the root directory of your project
+2. **Add copyright headers** to source files:
+
+```
+/*
+ * Copyright (c) 2025 Xavier Fonseca
+ * Licensed under the MIT License
+ * See LICENSE file for details
+ */
+```
+
+3. **For documentation**, add:
+```markdown
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+4. **For package managers**, include in package.json, setup.py, etc.:
+```json
+"license": "MIT"
+```
+
+## Contact Information
+
+For questions about this license or the software:
+- **Author**: Xavier Fonseca
+- **Email**: [xavier.fonseca.phd@gmail.com]
+- **Project URL**: [https://github.com/xavierfonsecaphd/Confluence-Web-Scraping]
